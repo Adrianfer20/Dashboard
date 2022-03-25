@@ -1,0 +1,66 @@
+<!-- Slate -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Wifi - New Tickets</title>
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/spinner.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+<header class="print:hidden fixed top-0 left-0 right-0 bg-slate-50 p-2 md:px-8 pb-0 mx-auto z-10">
+  <!--Navabar Principal-->
+<nav class="w-full flex items-center justify-between bg-indigo-600 rounded-lg shadow-lg p-2">
+  <span class="flex w-8 h-8">
+    <img src="img/planeta.png" alt="logo" class="w-full">
+  </span>
+  <ul class="flex items-center">
+    <a href="index.html" class="h-4 w-4 inline-block bg-slate-900 border-2 border-slate-900 bg-center bg-no-repeat hover:border-indigo-900 hover:bg-indigo-900 rounded-full p-4 mx-2" style="background-image: url(./svg/chevron_left_white_24dp.svg">
+    </a>
+  </ul>
+</nav>
+</header>
+<div id="container" class="flex flex-col justify-between min-h-screen">
+    
+<!--Hero-->
+<section id="app" class="w-full max-w-5xl mx-auto px-2 mb-12 md:mb-24">
+    <div class="relative pt-28 lg:pt-40 px-4">
+      <div class="flex-auto max-w-4xl">
+        <h1 id="title-hero" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight uppercase">CREAR TICKETS</h1>
+        <p id="description-hero" class="mt-4 text-lg text-slate-700">Esta utilidad solo está disponible para administradores; esta permite crear nuevos tickets; que solo se pueden usar dentro de los servidores mikrotik.</p>
+        <p class="mt-4 text-lg text-slate-700">Desarrollado por <span class="font-semibold">@Adrianfer Martinez</span></p></div>
+      </div>
+</section>
+
+<!-- Form App -->
+<form id="form_creat-tickets" class="w-full max-w-5xl mx-auto">
+  <div class="mt-8 px-4">
+      <div class="flex items-center justify-between border-b-2 border-indigo-600 text-xl p-2 mb-4">
+        <h4 class="text-indigo-600 font-semibold uppercase p-1">Empezar</h4>
+        <button id="btn-init" class="h-8 w-8 bg-indigo-600 border-2 border-indigo-600 bg-center bg-no-repeat rounded-full transform rotate-180" style="background-image: url(./svg/chevron_left_white_24dp.svg"></button>
+      </div>
+    </div>
+</form>
+
+<!-- Footer -->
+<footer class="w-full flex flex-col item-center justify-center mt-8 py-6">
+  <h4 class="text-center">@COPYRIGHT 2022</h4>
+  <h4 class="text-center">Desarrollado por <span class="font-semibold">Adrianfer Martinez</span></h4>
+</footer>
+</div>
+<div id="spinner" class="fixed top-0 left-0 bottom-0 right-0 bg-slate-100 flex items-center justify-center">
+    <div class="spinner"></div>
+  </div>
+<!--SDK Base de Firebase-->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<!--SDK Servicios Firebase-->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<!--SDK JS MAIN-->
+<script src="./js/creat.js" type="module"></script>
+</body>
+
+</html>
